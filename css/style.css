@@ -1,17 +1,29 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .container {
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
-  /* border: 1px solid black; */
 }
 
 /*                                       Header */
 .header_box{
   width: 90%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 1rem;
 }
 
@@ -22,8 +34,11 @@
 }
 
 .header_ul{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   color: #707070;
   font-size: 1.5rem;
 }
@@ -57,12 +72,19 @@
 .section2 {
   width: 90%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-family: "BPG Arial Caps";
 }
 
 .section2_h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 2.5rem;
   color: #707070;
@@ -70,17 +92,20 @@
 
 .section2_DIV {
   width: 100%;
-  /* height: 35.188rem; */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 3.125rem 0 4.688rem 0;
 }
 
 .image_box {
   width: 30%;
-  /* height: 100%; */
   border: none;
-  box-shadow: 0.188rem 0.313rem rgb(218, 216, 216);
+  -webkit-box-shadow: 0.188rem 0.313rem rgb(218, 216, 216);
+          box-shadow: 0.188rem 0.313rem rgb(218, 216, 216);
 }
 
 .images_size{
@@ -109,9 +134,15 @@ a p {
 
 .load_More {
   font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   cursor: pointer;
   color: #707070;
   margin-bottom: 4.25rem;
@@ -121,9 +152,14 @@ a p {
 .footer_section {
   width: 100%;
   background-color: #2e2e2e;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 4rem 0 2rem 0;
   font-family: "BPG Arial Caps";
 }
@@ -146,8 +182,12 @@ a p {
 
 .footer_icons {
   width: 6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .icon {
@@ -173,27 +213,34 @@ a p {
 
   .section1 {
     background-image: url(../images/banner2.png);
-    flex: 20rem;
+    -webkit-box-flex: 20rem;
+        -ms-flex: 20rem;
+            flex: 20rem;
     height: 15.813rem;
     margin: 1.5rem auto 3.5rem auto;
   }
 
   .section2_DIV {
-    flex-wrap: wrap;
-    align-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
     margin-bottom: 2rem;
   }
 
   .section2_h1 {
     font-size: 0.938rem;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .image_box {
     width: 18rem;
     height: 17rem;
     margin: 0 auto 1rem auto;
-    box-shadow: 0.1rem 0.2rem rgb(218, 216, 216);
+    -webkit-box-shadow: 0.1rem 0.2rem rgb(218, 216, 216);
+            box-shadow: 0.1rem 0.2rem rgb(218, 216, 216);
   }
 
   .section2_h2 {
@@ -216,9 +263,16 @@ a p {
   }
 
   .footer_section {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
   }
 
