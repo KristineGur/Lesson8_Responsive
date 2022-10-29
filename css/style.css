@@ -2,66 +2,85 @@
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 /*                                       Header */
 .header_box{
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 1rem;
 }
 
 .header_nav{
   width: 50%;
+  cursor: pointer;
+  font-family: "BPG Arial Caps";
 }
 
 .header_ul{
   display: flex;
   justify-content: space-around;
+  color: #707070;
+  font-size: 1.5rem;
 }
 
 .logo_img {
-  width: 122px;
-  height: 95px;
+  width: 7.625rem;
+  height: 5.938rem;
   cursor: pointer;
 }
 
+.fa-magnifying-glass {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+
 /*                                       Section First */
 .section1 {
-  width: 100%;
-  height: 613px;
-  margin: 60px auto 120px auto;
+  width: 90%;
+  height: 38.313rem;
+  margin: 3.75rem auto 7.5rem auto;
   background-image: url(../images/banner.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+
+
 /*                                         Section Second */
 .section2 {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-family: "BPG Arial Caps";
 }
 
 .section2_h1 {
-  font-size: 3rem;
+  display: flex;
+  font-size: 2.5rem;
   color: #707070;
-  margin-bottom: 68px;
 }
 
 .section2_DIV {
   width: 100%;
-  height: 563px;
+  /* height: 35.188rem; */
   display: flex;
   justify-content: space-between;
+  margin: 3.125rem 0 4.688rem 0;
 }
 
 .image_box {
   width: 30%;
-  height: 100%;
+  /* height: 100%; */
   border: none;
-  box-shadow: 4px 7px rgb(185, 184, 184);
+  box-shadow: 0.188rem 0.313rem rgb(218, 216, 216);
 }
 
 .images_size{
@@ -70,19 +89,22 @@
 }
 
 .section2_h2 {
-  font-size: 2rem;
+  font-size: 1.875rem;
   color: #707070;
-  margin-bottom: 37px;
+  margin-top: 0.625rem;
+  margin-bottom: 1.875rem;
 }
 
 .section2_P {
-  font-size: 1.5rem;
+  font-size: 1.125rem;
+  color:#707070;
 }
 
 a p {
   font-size: 1.5rem;
   margin-left: 85%;
-  margin-top: 60px;
+  margin-top: 10%;
+  color: #707070;
 }
 
 .load_More {
@@ -91,6 +113,120 @@ a p {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  margin: 45px 0 70px 0;
+  color: #707070;
+  margin-bottom: 4.25rem;
 }
 
+/*                                         Footer */
+.footer_section {
+  width: 100%;
+  background-color: #2e2e2e;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4rem 0 2rem 0;
+  font-family: "BPG Arial Caps";
+}
+
+.footer_logo {
+  width: 7.625rem;
+  height: 5.938rem;
+  cursor: pointer;
+}
+
+.footer_h2 {
+  font-size: 1rem;
+  color: #707070;
+}
+
+.footer_P {
+  font-size: 0.813rem;
+  color: #707070;
+}
+
+.footer_icons {
+  width: 6%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+/*                                         აქ იწყება რესპონსივი */
+
+@media (max-width:480px){
+  .logo_img {
+    width: 2.875rem;
+    height: 2.25rem;
+  }
+
+  .fa-magnifying-glass {
+    font-size: 0.8rem;
+  }
+
+  .header_ul {
+    display: none;
+  }
+
+  .section1 {
+    background-image: url(../images/banner2.png);
+    flex: 20rem;
+    height: 15.813rem;
+    margin: 1.5rem auto 3.5rem auto;
+  }
+
+  .section2_DIV {
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-bottom: 2rem;
+  }
+
+  .section2_h1 {
+    font-size: 0.938rem;
+    justify-content: center;
+  }
+
+  .image_box {
+    width: 18rem;
+    height: 17rem;
+    margin: 0 auto 1rem auto;
+    box-shadow: 0.1rem 0.2rem rgb(218, 216, 216);
+  }
+
+  .section2_h2 {
+    font-size: 0.938rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .section2_P {
+    font-size: 0.5rem;
+  }
+
+  a p {
+    font-size: 0.5rem;
+  }
+
+  .load_More {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .footer_section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer_logo {
+    display: none;
+  }
+
+  .footer_icons {
+    width: 20%;
+  }
+}
